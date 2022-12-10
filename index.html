@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b6e258e785.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js" defer></script>>
+
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- metadata for search engines -->
+  <meta name="description" content="developer portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Santtu Lähderinne">
+</head>
+<body>
+<!-- Header starts -->
+
+<nav class="navbar">
+  <div class="my-name"><a href="#welcome-section"><span class="hover-underline-animation">Santtu Lähderinne</span></a></div>
+  <a href="#a" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#projects"><span class="hover-underline-animation">Projects</span></a></li>
+      <li><a href="#about"><span class="hover-underline-animation">About</span></a></li>
+      <li><a href="#contact"><span class="hover-underline-animation">Contact</span></a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Header ends -->
+<main>
+  <!-- Welcome section start -->
+  <section id="welcome-section" class="welcome-section">
+    <h2>Hi I'm <a href="#about">Santtu Lähderinne</a></h2>
+    <p>a web developer based in Finland</p>
+  </section>
+  
+  <!-- welcome section ends -->
+
+  <!-- projects section starts -->
+  <div class="anchor" id="projects"></div>
+  <section class="padding-bottom">
+  <h2 class="section-header">Some of my projects</h2>
+    <div class="grid">
+      <div class="container">
+        <img src="images/pong.png" alt="project">
+        <div class="overlay">
+          <h3>Pong</h3>
+          <p>A simple game I made with Python's Pygame module.</p>
+          <a href="#" alt="">
+            <p class="project-title"><span class="code"><</span>
+              Github
+              <span class="code">/></span>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="images/portfolio.png" alt="project">
+        <div class="overlay">
+          <h3>Personal portfolio</h3>
+          <p>My portfolio website that I made with with HTML, CSS and JavaScript.</p>
+          <a href="#" alt="">
+            <p class="project-title"><span class="code"><</span>
+              Github
+              <span class="code">/></span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- projects section end -->
+
+  <!-- About section starts -->
+
+  <section id="about">
+    <div class="about">
+      <div class="left-half-about"></div>
+      <div class="right-half-about">
+        <h3 class="turquoise-header">About me</h3>
+        <p>Hello I'm Santtu, an aspiring web developer based in Finland. I'm currently studying Information and Communications Technology at Jyväskylä University of Applied Sciences.<br><br>
+        </p>
+        <p>I'm passionate about Python programming and enjoy building things for the web with Python/Django.<br></p>
+      </div>
+    </div>
+  </section>
+  <!-- About section ends -->
+
+  <!-- Contact sections start -->
+
+   <!-- "Anchor" to stop the navbar from covering the header when scrolling  -->
+   <div class="anchor" id="contact"></div>
+
+   <section>
+    <div class="contact">
+      <div class="left-half-contact">
+        <h3 class="turquoise-header">Contact</h3>
+        <h2>Can I help you with something?</h2>
+        <p class="padding">I'm looking for new challenges and opportunities where I can contribute, learn and grow as a developer</p>
+        <div class=><a href="mailto:santtu.lahderinne@gmail.com" alt="email_address"><i class="fa-solid fa-envelope"></i>santtu.lahderinne@gmail.com</a></div>
+      </div>
+
+      <div class="right-half-contact">
+        <form action="https://formsubmit.co/santtu.lahderinne@gmail.com" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="message">message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/thanks.html">
+        <input type="hidden" name="_subject" value="Message from portfolio">
+        <button type="submit">Say hi</button>
+      </form>
+      </div>
+    </div>
+   </section>
+
+   <section class="footer">
+    <h6>Designed and Developed by<span class="background-color">Santtu Lähderinne</span></h6>
+   </section>
+</main>
+</body>
+</html>
